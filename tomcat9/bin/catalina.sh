@@ -142,6 +142,8 @@ if [ -r "$CATALINA_BASE/bin/setenv.sh" ]; then
   . "$CATALINA_BASE/bin/setenv.sh"
 elif [ -r "$CATALINA_HOME/bin/setenv.sh" ]; then
   . "$CATALINA_HOME/bin/setenv.sh"
+elif [ -r "$CATALINA_HOME/local/setenv.sh" ]; then
+  . "$CATALINA_HOME/local/setenv.sh"
 fi
 
 # For Cygwin, ensure paths are in UNIX format before anything is touched

@@ -1,5 +1,5 @@
 REGISTRY = 080385600816.dkr.ecr.us-east-1.amazonaws.com
-TAG = 0.0.1
+TAG = 0.0.26-0
 LOGIN:=$(shell aws ecr get-login --no-include-email)
 APP = tomcat9
 all:
