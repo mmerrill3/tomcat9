@@ -28,4 +28,6 @@
     <!--
     <Manager pathname="" />
     -->
+    <!-- Force use the old Cookie processor (because this new tomcat version uses RFC6265 Cookie Specification) -->
+	<CookieProcessor className="org.apache.tomcat.util.http.LegacyCookieProcessor" />
 </Context>
